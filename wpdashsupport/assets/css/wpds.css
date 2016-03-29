@@ -1,0 +1,20 @@
+#wpds_widget_form {
+    margin: 15px 0;
+}
+
+#wpds_widget_form h3 {
+    margin-bottom: 0;
+}
+
+#wpds_widget_form input[type="text"], #wpds_widget_form textarea, #wpds_widget_form input[type="submit"] {
+    margin-top: 15px;
+}
+
+#wpds_widget_form input[type="submit"].sent {
+    background: #2FA938 !important;
+    color: #fff !important;
+}
+
+#wpds_widget_form .error {
+    border: 1px solid #ff5d73;
+}
