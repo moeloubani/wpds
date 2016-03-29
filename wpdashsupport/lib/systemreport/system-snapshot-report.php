@@ -159,7 +159,7 @@ class System_Snapshot_Report
 
 		// start generating report
 		$report	= '';
-		$report	.= '### Begin System Info ###'."\n";
+		$report	.= "\n".'### Begin System Info ###'."\n";
 		// add filter for adding to report opening
 		$report	.= apply_filters( 'snapshot_report_before', '' );
 
