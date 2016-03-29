@@ -12,15 +12,8 @@
 define( 'WPDS_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WPDS_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 
-
-//Initialize plugin
-function dashsupport_start()
-{
-    require_once('lib/systemreport/system-snapshot-report.php');
-    require_once('inc/class-mail.php');
-    require_once('inc/class-dashboard.php');
-    require_once('inc/class-settings.php');
-    require_once('inc/class-init.php');
-}
-
-add_action('admin_menu', 'dashsupport_start');
+require_once('lib/systemreport/system-snapshot-report.php');
+require_once('inc/class-mail.php');
+require_once('inc/class-dashboard.php');
+require_once('inc/class-settings.php');
+require_once('inc/class-init.php');

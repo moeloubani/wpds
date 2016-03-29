@@ -13,12 +13,12 @@ class DashSupport_Mail
         $data = System_Snapshot_Report::getInstance();
 
         $data = array(
-            'email' => $_POST['wpds_email'],
-            'subject' => $_POST['wpds_subject'],
-            'message' => $_POST['wpds_message'] . $data->snapshot_data(),
+            'email' => $_POST['email'],
+            'subject' => $_POST['subject'],
+            'message' => $_POST['message'] . $data->snapshot_data(),
         );
 
-        $response = wp_mail(get_option('wpds_dev_email'), $data['subject'], $data['message']);
+        $response = wp_mail(get_option('wpds_dev_email'), $data['subject'] . 'from ' . $_POST['wpds_email'], $data['message']);
 
         wp_send_json_success($response);
         exit;
