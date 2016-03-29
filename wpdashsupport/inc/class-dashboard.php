@@ -12,7 +12,7 @@ class DashSupport_Dashboard
 
         wp_add_dashboard_widget(
             'dashsupport_widget',         // Widget slug.
-            'Contact Developer Support',         // Title.
+            __('Contact Developer Support', 'wpdashsupport'),         // Title.
             array($this, 'dashboard_widget_function') // Display function.
         );
     }

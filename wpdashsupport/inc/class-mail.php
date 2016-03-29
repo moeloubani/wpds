@@ -20,8 +20,8 @@ class DashSupport_Mail
     public function mail()
     {
         $data = array(
-            'subject' => $_POST['subject'],
-            'message' =>  $this->message($_POST['message'], $_POST['email']),
+            'subject' => sanitize_text_field($_POST['subject']),
+            'message' =>  $this->message(esc_textarea($_POST['message']), sanitize_email($_POST['email'])),
         );
 
         $response = wp_mail(get_option('wpds_dev_email'), $data['subject'], $data['message']);

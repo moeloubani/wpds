@@ -22,7 +22,7 @@ class DashSupport_Settings {
     function fields_html()
     {
         $value = get_option( 'wpds_dev_email', '' );
-        echo '<input type="text" id="wpds_dev_email" name="wpds_dev_email" value="' . $value . '" class="regular-text ltr" />';
+        echo '<input type="text" id="wpds_dev_email" name="wpds_dev_email" value="' . sanitize_email($value) . '" class="regular-text ltr" />';
     }
 
 }

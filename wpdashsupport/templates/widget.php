@@ -7,7 +7,7 @@
 do_action('wpds_before_form');
 ?>
 <form id="wpds_widget_form" action="">
-    <h3><?php echo apply_filters( 'example_filter', __('Enter a message below to contact your developer for assistance.', 'wpdashsupport')); ?></h3>
+    <h3><?php echo htmlspecialchars(apply_filters( 'example_filter', __('Enter a message below to contact your developer for assistance.', 'wpdashsupport'))); ?></h3>
     <div class="input-text-wrap">
         <input type="text" placeholder="<?php _e('Subject', 'wpdashsupport') ?>" id="wpds_subject" name="wpds_subject">
     </div>
