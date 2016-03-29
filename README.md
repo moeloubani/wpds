@@ -1,4 +1,4 @@
-# wpds
+# WP Dashboard Support
 A WordPress plugin that adds an easy way for people to contact their developer from the admin dashboard.
 
 Should help you keep clients since they'll be able to just contact you right away without giving them 
